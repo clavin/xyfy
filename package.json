@@ -29,13 +29,15 @@
     "ava": "^2.2.0",
     "prettier": "^1.18.2"
   },
+  "files": [
+    "dist/**/*.js"
+  ],
   "prettier": {
     "semi": true,
     "singleQuote": true,
     "trailingComma": "all"
   },
   "babel": {
-    "sourceMaps": true,
     "presets": [
       [
         "@babel/preset-env",
