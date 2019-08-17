@@ -1,0 +1,50 @@
+{
+  "name": "xyfy",
+  "version": "0.1.0",
+  "author": "Calvin Watford",
+  "license": "MIT",
+  "description": "Barebones JSX framework",
+  "keywords": [
+    "jsx",
+    "ast",
+    "builder"
+  ],
+  "homepage": "https://github.com/clavin/xyfy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clavin/xyfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clavin/xyfy/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run build && ava",
+    "build": "babel src --out-dir dist --ignore \"src/**/*.spec.js\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "ava": "^2.2.0",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "babel": {
+    "sourceMaps": true,
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "8"
+          }
+        }
+      ]
+    ]
+  }
+}

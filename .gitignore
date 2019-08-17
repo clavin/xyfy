@@ -1,0 +1,4 @@
+# Node packages & build artifacts
+/node_modules/
+/package-lock.json
+/dist/
